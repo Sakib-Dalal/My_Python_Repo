@@ -21,3 +21,7 @@ for x in i.items():
     print(x[0])
 for x in i.items():
     print(x[1])
+
+for x, (y, z) in enumerate(i.items()):
+    print(f"index: {x}", f"Key: {y}", f"Value: {z}")
+    
