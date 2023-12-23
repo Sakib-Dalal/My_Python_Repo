@@ -1,27 +1,14 @@
-i = {1: 30, 2: 40, 3: 70, 4: 20}
+i = {1: 10, 2: 20, 3: 30, 4: 40}
 print(i)
-print(i.items())
-print(i.keys())
-print(i.values())
+# Basic Operations
+# add
+i[5] = 50
+print(i)
+# modify
+i[5] = 90
+print(i)
+# delete
+del (i[5])
 
-for x in i:
-    print(x)
-for x in i.keys():
-    print(x)
-for x in i.values():
-    print(x)
-for x, y in i.items():
-    print(x)
-
-for x in i.items():
-    print(x)
-    print(type(x))
-
-for x in i.items():
-    print(x[0])
-for x in i.items():
-    print(x[1])
-
-for x, (y, z) in enumerate(i.items()):
-    print(f"index: {x}", f"Key: {y}", f"Value: {z}")
-    
+print(sorted(i))
+del (i)
