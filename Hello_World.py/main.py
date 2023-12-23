@@ -1,17 +1,21 @@
-s1 = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50}
-s2 = {6: 60, 7: 70, 8: 80, 9: 90, 10: 100}
-# doesnt work print(s1 + s2)
-# doesnt work s3 = {1: 10} + s2
+s = {1: 10, 2: 20, 3: 30, 4: 40}
+print(len(s))
+print(len(s.items()))
+print(len(s.keys()))
+print(len(s.values()))
 
-# cloning
-s3 = s1
-print(s3)
+print(max(s))
+print(max(s.keys()))
+print(max(s.values()))
+print(sum(s))
+print(sum(s.keys()))
+print(sum(s.values()))
+print(any(s))
+print(all(s))
 
-print(1 in s1)
-print(10 in s1.values())
-print(s1 is s2)
-print(s1 is s3)
-
-# aliasing is normally adding
-s1[0] = 10
-print(s1)
+x = {"A01": "Sakib", "A02": "Raj", "A03": "ABC"}
+print(len(x))
+print(max(x))
+print(min(x))
+print(max(x.values()))
+print(min(x.values()))
