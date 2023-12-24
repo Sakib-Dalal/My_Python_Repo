@@ -1,14 +1,6 @@
-a = {1: 10, 2: 20, 3: 30}
-b = {4: 40, 5: 50}
-c = {6: 60, 7: 70, 8: 80}
+student = {1: "Ashok", 2: "Raj", 3: "Govind"}
 
-d = {}
+roll_no = int(input("Enter a number: "))
 
-for i, j in a.items():
-    d[i] = j
-for i, j in b.items():
-    d[i] = j
-for i, j in c.items():
-    d[i] = j
-
-print(d)
+name = student.get(roll_no, "Student")
+print(f"Congratulation {name}")
