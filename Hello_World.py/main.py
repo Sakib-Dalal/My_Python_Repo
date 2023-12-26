@@ -1,15 +1,8 @@
-d = {"a": 1, "b": 2, "c": 3, "d": 4}
+a = [n for n in range(2, 51) if n % 2 == 0 and n % 4 == 0]
+print(a)
 
-d1 = {i: j**3 for (i, j) in d.items()}
-print(d1)
-
-d2 = {i: j**3 for (i, j) in d.items() if j > 3}
-print(d2)
-
-g = {1: 2, 3: 4}
-print(g[3])
-
-d3 = {i: ("Even" if j % 2 == 0 else "Odd") for (i, j) in d.items()}
-print(d3)
-
-
+l = []
+for i in range(2, 51):
+    if i % 2 == 0 and i % 4 == 0:
+        l.append(i)
+print(l)
