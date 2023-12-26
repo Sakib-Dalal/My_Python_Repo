@@ -10,3 +10,9 @@ print(a)
 m = [i for j in range(10) for i in range(5)]
 print(m)
 
+d = [a + b for a in [1, 2, 3] for b in [4, 5, 6]]
+print(d)
+
+d = [[a + b for a in [1, 2, 3]] for b in [4, 5, 6]]
+print(d)
+
