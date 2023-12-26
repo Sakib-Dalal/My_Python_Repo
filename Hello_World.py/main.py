@@ -18,6 +18,6 @@ print(a)
 a = [x for x in range(10, 30) if x % 2 == 0]
 print(a)
 
-# include n from list a if n is gater than 20
+# include n from list "a" if n is gater than 20
 a = [n for n in a if n > 20]
 print(a)
