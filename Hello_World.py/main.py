@@ -23,3 +23,25 @@ def fun2(*args):
 fun2(*lst)
 fun2(*tpl)
 fun2(*s)
+print()
+
+
+# for dictionaries using keywords
+def fun3(name, marks):
+    print(name, marks)
+
+
+d = {"name": "Sakib", "marks": 50}
+fun3(*d)
+fun3(**d)
+
+
+# with multiple values
+def fun4(**kwargs):
+    print()
+    for k, v in kwargs.items():
+        print(k, v, end=" ")
+
+
+my_dic = {"1": 10, "2": 20, "3": 30, "4": 40}
+fun4(**my_dic)
