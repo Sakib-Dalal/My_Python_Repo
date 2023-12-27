@@ -1,12 +1,21 @@
-def fun1():
-    print("Hello World 01")
-
-    def fun2():
-        print("Hello World 02")
-
-    fun2()
+def fun(x):
+    return x
 
 
-# calling the function
-fun1()
+s = fun("How is this")
+print(s)
 
+
+def fun2(y, z):
+    return y + z
+
+
+s = fun2(4, 2)
+print(s)
+
+
+def fun3(x):
+    print(x)
+
+
+fun3("Hello World")
