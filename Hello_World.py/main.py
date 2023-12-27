@@ -1,34 +1,43 @@
-def fun(x, y, z):
-    return x + y, y + z, x / y, round(y / z, 2)
+# position argument
+
+def fun1(i, j, k):
+    print(i + j)
+    print(k.upper())
 
 
-s = fun(1, 2, 3)
-print(s)
-print(type(s))
+fun1(13, 3.14, "Hello")
 
 
-def fun2(x, y, z):
-    return [x, y, z]
+# keyword argument
+
+def fun2(i, f, str):
+    print(i, f, str)
 
 
-s = fun2("Hello", "World", "!")
-print(s)
-print(type(s))
+fun2(12, 13.2, 'Hello')
+fun2(i=12, f=13.2, str='Hello')
+fun2(str='Hello', i=12, f=13.2)
+fun2(f=13.2, str='Hello', i=12)
+
+fun2(12, f=13.2, str='Hello')
+fun2(12, str='Hello', f=13.2)
 
 
-def fun3(x, y, z):
-    return {x, y, x}
+# if number of parameters in a function are unknown
+def fun3(*args):
+    print()
+    for v in args:
+        print(v, end=" ")
 
 
-s = fun3("Hello", "World", "!")
-print(s)
-print(type(s))
+fun3(3)
+fun3("Hello", 3, 23, 34.35)
 
 
-def fun4(x, y, z, a):
-    return {x: y, z: a}
+def fun4(*args):
+    print()
+    for v in args:
+        print(v + (v+1))
 
 
-s = fun4("A", 1, "B", 2)
-print(s)
-print(type(s))
+fun4(3, 4, 5)
