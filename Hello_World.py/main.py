@@ -24,6 +24,7 @@ fun2(12, str='Hello', f=13.2)
 
 
 # if number of parameters in a function are unknown
+# variable length position
 def fun3(*args):
     print()
     for v in args:
@@ -37,7 +38,25 @@ fun3("Hello", 3, 23, 34.35)
 def fun4(*args):
     print()
     for v in args:
-        print(v + (v+1))
+        print(v + (v + 1))
 
 
 fun4(3, 4, 5)
+
+
+# variable length keyword
+# works as a dictionary
+def print_it(**kwargs):
+    print()
+    for key, value in kwargs.items():
+        print(key, value, end=" ")
+
+
+print_it(a=10)
+print_it(a=10, b=3)
+print_it(a=10, b=3, s="Hello")
+
+dic = {"1": "10", "2": "20", "3": "30", "4": 40}
+print_it(**dic)
+
+
