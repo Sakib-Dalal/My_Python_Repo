@@ -1,6 +1,25 @@
-def fun(a, b=3.14):
-    print(2 * b * a)
+# unpacking list/tuple/set argument
+
+def fun(a, b, c, d):
+    print(a, b, c, d)
 
 
-fun(4)
-fun(4, 3)
+lst = [1, 2, 3, 4]
+tpl = (1, 2, 3, 4)
+s = {1, 2, 3, 4}
+
+fun(*lst)
+fun(*tpl)
+fun(*s)
+
+
+# using *args
+def fun2(*args):
+    print()
+    for v in args:
+        print(v, end=" ")
+
+
+fun2(*lst)
+fun2(*tpl)
+fun2(*s)
