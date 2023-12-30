@@ -1,12 +1,13 @@
-def cal_sum_prod(x, y, z):
-    ss = x + y + z
-    pp = x * y * z
-    return ss, pp
+import math
 
 
-a = int(input("Enter a num: "))
-b = int(input("Enter b num: "))
-c = int(input("Enter c num: "))
+def paint_cal(height, width, cover):
+    num_of_can = (height * width) / cover
+    print(f"number of can required: {math.ceil(num_of_can)}")
 
-s, p = cal_sum_prod(a, b, c)
-print(s, p)
+
+test_h = int(input("Enter Height of Wall: "))
+test_w = int(input("Enter Width of Wall: "))
+coverage = 5
+
+paint_cal(height=test_h, width=test_w, cover=coverage)
