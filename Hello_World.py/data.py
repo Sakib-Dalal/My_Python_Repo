@@ -1,0 +1,1 @@
+lst = ["Temp", "Rel Hum", "Cloud Cover", "Wind Vel", "sakib"]
