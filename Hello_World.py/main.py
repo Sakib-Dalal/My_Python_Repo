@@ -1,5 +1,6 @@
 import module
 
-w = module.Weather()
+e1 = module.Employee()
 
-print("sakib" in w)
+e1.set_employee()
+e1.display_emp()
